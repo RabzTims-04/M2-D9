@@ -444,9 +444,9 @@
         const row = document.getElementsByTagName('tr') 
         console.log(table);     
         for(let i=0; i<close.length; i++){          
-            row[i].addEventListener('click', function(e){
-                e.currentTarget.classList.add('fade-out-right') 
-                const tr = e.currentTarget             
+            close[i].addEventListener('click', function(e){               
+                const tr = e.currentTarget.parentElement.parentElement
+                tr.classList.add('fade-out-right')              
                 setTimeout(() => {tr.remove();}, 500);                       
             })
         }        
