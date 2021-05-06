@@ -24,18 +24,26 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
 <html>
   <head>
     <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
-     <!-- Required meta tags -->
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- 
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-     <!-- CSS file -->
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="keyframes.css">
- 
-     <title>M2D9</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="keyframes.css"/>
+
+    <title>M2D9</title>
 
     <style>
       /* PREVIOUS STUFF */
@@ -46,9 +54,44 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
         Use the specific bootstrap component to implement a Breadcrumb
         -->
 
+    <!-- <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+          </nav>
+          
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+          </nav> -->
+    <nav aria-label="breadcrumb" class="fixed-top">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+        <li class="breadcrumb-item"><a href="tracklist.html" target="_blank">Tracklist</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>        
+      </ol>
+    </nav>
+
     <!-- EXERCISE 2
             Create a Jumbotron section with a quick explanation / image of the website
         -->
+    <div class="container-fluid pt-4 mt-5 pl-0 pr-0">
+      <div class="jumbotron text-muted">
+        <h1 class="display-4">About Me</h1>
+        <p class="lead">
+          This is a simple hero unit, a simple jumbotron-style component for
+          calling extra attention to featured content or information.
+        </p>
+        <hr class="my-4" />
+        <p>
+          It uses utility classes for typography and spacing to space content
+          out within the larger container.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+    </div>
 
     <!-- EXERCISE 3
             Foreach album in the favorite list, place the genre inside a badge
@@ -58,6 +101,100 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             Foreach album in the favorite list, use the Bootstrap Card to contain it.
             Use card layouts to format it in the best and more compatible way.
         -->
+
+    <div class="container">
+      <div class="card-columns text-muted">
+        <div class="card">
+          <img src="images/rihanna.jpg" class="card-img-top img-fluid" alt="..."/>
+          <span class="badge badge-pill badge-light position-absolute">Genre</span>
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <a class="btn btn-outline-secondary" target="_blank" href="tracklist.html" role="button">Go to Tracklist</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/rihanna.jpg" class="card-img-top img-fluid" alt="..." />
+          <span class="badge badge-pill badge-light position-absolute">Genre</span>
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <a class="btn btn-outline-secondary" target="_blank" href="tracklist.html" role="button">Go to Tracklist</a>
+          </div>
+        </div>
+        <div class="card text-center">
+          <div class="card-body">
+            <h2 class="card-title">My Favourite Songs</h2>
+            <p class="card-text">
+              This card has a regular title and short paragraphy of text below
+              it.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card bg-primary text-white text-center p-3">
+          <blockquote class="blockquote mb-0">
+            <p>A well-known quote, contained in a blockquote element.</p>
+            <footer class="blockquote-footer text-white">
+              <small>
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card">
+          <img src="images/eminem.jpg" class="card-img-top img-fluid" alt="..." />
+          <span class="badge badge-pill badge-light position-absolute">Genre</span>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+            <a class="btn btn-outline-secondary" target="_blank" href="tracklist.html" role="button">Go to Tracklist</a>
+          </div>
+        </div>
+        <div class="card">
+            <img src="images/thriller.png" class="card-img-top img-fluid" alt="..." />
+            <span class="badge badge-pill badge-light position-absolute">Genre</span>
+            <div class="card-body">
+              <h5 class="card-title">Card title that wraps to a new line</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a class="btn btn-outline-secondary" target="_blank" href="tracklist.html" role="button">Go to Tracklist</a>
+            </div>
+          </div>
+        <div class="card">
+          <img src="images/back.jpg" class="card-img-top img-fluid" alt="..." />
+          <span class="badge badge-pill badge-light position-absolute">Genre</span>
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <a class="btn btn-outline-secondary" target="_blank" href="tracklist.html" role="button">Go to Tracklist</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- EXERCISE 5
             Place the tracklist inside a Bootstrap table.
@@ -84,6 +221,37 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
     <!-- EXERCISE 8 
             Add to the footer an extra column with the same links of the top nav.
         -->
+
+        <footer class="container-fluid text-muted bg-light mt-5">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h5 class="mt-5">Contact</h5>
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>           
+            </div>
+            
+            <div class="row justify-content-center">
+                
+                <nav aria-label="breadcrumb bg-light">
+                    <ol class="breadcrumb bg-light">
+                      <li class="breadcrumb-item active" aria-current="page">Home</li>
+                      <li class="breadcrumb-item"><a href="tracklist.html" target="_blank">Tracklist</a></li>
+                      <li class="breadcrumb-item"><a href="#">Library</a></li>        
+                    </ol>
+                  </nav>
+
+            </div>
+          </footer>
 
     <!-- EXERCISE 9
             Add a button "Add Track" under the track list the album, add a nice shadow transition when the button is hovered
@@ -134,8 +302,16 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
     <!-- EXERCISE 16
             Make every section of the page "collapsable" if the user clicks on the section title
         -->
-        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
