@@ -446,18 +446,49 @@
         for(let i=0; i<close.length; i++){          
             row[i].addEventListener('click', function(e){
                 e.currentTarget.classList.add('fade-out-right') 
-               
-               /*  e.currentTarget.classList.add('d-none') */
-              /*   const td = e.currentTarget.parentNode;
-                const tr = td.parentNode; // the row to be removed
-                tr.parentNode.removeChild(tr)   */               
-            }) 
+                const tr = e.currentTarget             
+                setTimeout(() => {tr.remove();}, 500);                       
+            })
         }        
+    }
+
+    
+
+    function addTrack(){
+        const table = document.getElementsByTagName('table')
+        const trackOrder = document.querySelector('.modal-body .row .col-sm-6:first-of-type input:first-of-type')
+        orderNumber = trackOrder.value
+        console.log(orderNumber);
     }
 
     window.onload = function(){
         click()
     }
+
+    /* <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6 d-flex flex-column">
+                    <p>Track number</p>
+                    <input type="number">
+                    <hr>
+                    <p>Track name</p>
+                    <input type="text">
+                    <hr>
+                    <p>Track length</p>
+                    <input type="number" name="" id="">
+                  </div>
+                  <div class="col-sm-6 d-flex flex-column">
+                      <p>Track featuring</p>
+                      <input type="text">
+                      <hr>
+                      <p>Live Track (checkbox)</p>
+                      <input type="checkbox">
+                      <input type="checkbox">
+                  </div>
+                </div>
+              </div>
+        </div> */
 </script> 
 </body>
 </html>
