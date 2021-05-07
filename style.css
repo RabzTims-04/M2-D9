@@ -40,8 +40,40 @@ body{
 tr:hover .close{
     opacity: 1;
     color: red;
+    animation-name: slide-out-blurred-top;
    
 }
+
+.btn-primary{
+    background-color: red;
+    color: black;
+    border-color: red;
+    box-shadow: none;
+}
+
+
+.btn-primary:hover{
+    background-color: transparent;
+    color: red;
+    border-color: red;
+    box-shadow: none;
+}
+
+.btn-primary:active{
+    background-color: transparent;
+    color: red;
+    border-color: red;
+    box-shadow: none;
+}
+
+
+.btn-primary:focus{
+    background-color: transparent;
+    color: red;
+    border-color: red;
+    box-shadow: none;
+}
+
 
 /* .slide-out-blurred-top {
     opacity: 1;
@@ -87,4 +119,6 @@ tr:hover .close{
     transform: translateX(-2px);
     
 }
+
+
 
